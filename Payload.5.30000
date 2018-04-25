@@ -1,0 +1,25 @@
+{
+    "filters":{
+        "op":"and",
+        "content":[
+            {
+                "op":"=",
+                "content":{
+                    "field":"access",
+                    "value":["open"]
+                }
+            },
+            {
+                "op":"!=",
+                "content":{
+                    "field":"data_format",
+                    "value":["XLSX","MAF"]
+                }
+            }
+        ]
+    },
+    "format":"tsv",
+    "fields":"access,data_format,data_category,experimental_strategy,file_id,file_name,file_size,platform,submitter_id,cases.case_id,cases.submitter_id,cases.submitter_sample_ids,cases.project.name,cases.project.project_id,cases.project.primary_site",
+    "size":"30000",
+    "from":"120000"
+}
